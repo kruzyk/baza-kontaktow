@@ -6,14 +6,27 @@ body{
 
 form{
   margin-left: 50px;
+  font-size: 18px;
 }
 
 p{
   background: #393939;
   color: #ec7f37;
-  font-size: 30px;
-  
+  font-size: 20px;
+}
 
+.btnAdd {
+  background: #FF5A09;
+  color: #393939;
+  font-size: 20px;
+  margin: 10px 10px;
+}
+
+.btnRemove {
+  background: #FF5A09;
+  color: #393939;
+  font-size: 20px;
+  margin: 10px 10px;
 }
 
 ul{

@@ -53,7 +53,7 @@ class App extends Component {
 
     return (
       <div>
-        <h1>Contact List</h1>
+        <h1>Baza kontaktów</h1>
         <ContactForm addContactFunction={this.addContact} />
         <ul>
           {
@@ -64,9 +64,8 @@ class App extends Component {
                     <span onClick={() => this.toggleContactFavourite(contact.id)}>&#9733;  </span> :
                     <span onClick={() => this.toggleContactFavourite(contact.id)}>&#9734;  </span>}
                   {contact.name} {contact.surname} {contact.phoneNumber}
+                  <button className="btnRemove" onClick={() => this.removeContact(contact.id)}>Usuń</button>
                 </p>
-                <p>{contact.number}</p>
-                <button className="btn btn-danger xs1" onClick={() => this.removeContact(contact.id)}>Remove</button>
               </li>
             ))
 
